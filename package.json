@@ -1,12 +1,10 @@
 {
-  "name": "web-alive",
+  "name": "project",
   "version": "1.0.0",
   "description": "Keep your web apps alive with periodic health checks",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "build": "node canary.js && tsc",
+    "prepare": "node canary.js"
   },
   "dependencies": {
     "react": "^18.2.0",
